@@ -200,39 +200,31 @@ Documentação completa da API: [link para Swagger, Postman ou `docs/api.md`]
 
 ```text
 .
-ShareBook/
-├── README.md                 # Documentação principal do projeto
-├── .env.example              # Exemplo de variáveis de ambiente
-├── docs/                     # Documentação técnica
-│   ├── README.pdf            # Índice da documentação
-│   └── modelagem/
-│       ├── casos-de-uso/
-│       │   └── especificacoes-casos-de-uso.pdf
-│       ├── classes/
-│       │   └── diagrama-de-classes.pdf
-│       └── banco-de-dados/
-│           ├── diagrama-er.pdf
-│           └── modelo-logico.pdf
-├── images/                   # Imagens e capturas de tela
-├── src/                      # Código-fonte da aplicação
-│   ├── frontend/             # Interface do usuário
-│   └── backend/              # Regras de negócio e acesso a dados
-├── tests/                    # Testes automatizados
-└── scripts/                  # Scripts auxiliares
+├── README.md                               # Documentação principal do projeto
+├── image.png                               # Captura de tela geral/demonstração
+├── docs/                                   # Artefatos técnicos e modelagem do projeto
+│   ├── ShareBook - Documento de Visão.pdf  # Documento de visão do projeto
+│   └── modelagem/                          # Modelos e diagramas UML/ER
+│       ├── banco-de-dados/                 # Modelagem do banco de dados
+│       │   └── DiagramER.pdf               # Diagrama Entidade-Relacionamento
+│       ├── casos-de-uso/                   # Diagramas de interações e atores
+│       │   └── Diagrama de caso de uso - ShareBook.png
+│       └── classes/                        # Diagrama de classes UML
+│           └── DiagramClasse.png
+├── images/                                 # Imagens auxiliares da documentação
+│   └── semaforo.png                    # Imagem da política de uso de IA
+└── venv/                               # Ambiente virtual do Python (não versionado)
 ```
 
 
 | Diretório / arquivo | Função |
 | --- | --- |
 | `README.md` | Apresentação do projeto, objetivos, tecnologias e instruções de uso |
-| `.env.example` | Lista das variáveis necessárias, sem credenciais reais |
-| `docs/` | Artefatos de análise e modelagem em PDF |
-| `docs/modelagem/` | Casos de uso, classes e modelo de dados (diagramas embutidos nos PDFs) |
-| `images/` | Figuras da documentação geral do repositório (não usar para diagramas de modelagem) |
-| `src/` | Código-fonte organizado por camada ou módulo |
-| `tests/` | Casos de teste e evidências de verificação |
-| `scripts/` | Automação de ambiente e execução |
-
+| `image.png` | Imagem de apresentação/demonstração exibida no README |
+| `docs/` | Artefatos de análise, modelagem e documento de visão do projeto |
+| `docs/modelagem/` | Diagramas de casos de uso, classes e ER |
+| `images/` | Figuras da documentação geral |
+| `venv/` | Ambiente virtual com as dependências do Python instaladas |
 
 ---
 
@@ -370,9 +362,9 @@ Este repositório segue a política de uso de IA da disciplina (semáforo pedag�
 
 
 - **Houve uso de IA neste projeto?** [Sim]
-- **Ferramentas utilizadas:** [ChatGPT]
-- **Finalidade:** [revisão de texto, geração de esboço de testes, esclarecimento de dúvidas de sintaxe]
-- **O que NÃO foi delegado à IA:** [definição do problema, modelagem, implementação das regras de negócio, testes finais]
+- **Ferramentas utilizadas:** [ChatGPT/Gemini]
+- **Finalidade:** [geração de bases para inspiração, esclarecimento de dúvidas de sintaxe]
+- **O que NÃO foi delegado à IA:** [definição do problema, modelagem, implementação das regras de negócio, testes finais, idealização de projetos]
 
 
 ---
